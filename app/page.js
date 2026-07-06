@@ -16,6 +16,7 @@ export default function Page() {
             <a href="#founder">Founder</a>
             <a href="#work">Proven Work</a>
             <a href="#build">What We Build</a>
+            <a href="#platform">The Platform</a>
             <a href="#partner">Media Partner</a>
             <a className="nav-cta" href="#contact">
               Talk to us
@@ -486,12 +487,311 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ================= PLATFORM SHOWCASE ================= */}
+      <section className="stage dark" id="platform">
+        <div className="wrap">
+          <Reveal>
+            <div className="plate">
+              <span className="plate-num">05</span>
+              <span className="plate-label">The platform, already live</span>
+            </div>
+          </Reveal>
+          <Reveal delay={60}>
+            <h2 className="h2">
+              Not a mockup. A federation platform we{" "}
+              <span className="accent">already run</span>.
+            </h2>
+          </Reveal>
+          <Reveal delay={120}>
+            <p className="lede">
+              This is the live BBCH platform — athlete logins, one central
+              database, results, performance data and a decade of history, all
+              built by us. For CFI we build the same thing, scaled to a national
+              federation across every state association — and do it better.
+            </p>
+          </Reveal>
+
+          {/* SHOT 1 — Athlete profile */}
+          <Reveal className="shot">
+            <div className="shot-copy">
+              <span className="shot-kicker">Athlete profiles &amp; logins</span>
+              <h3>Every athlete gets a login and a full profile</h3>
+              <ol className="shot-notes">
+                <li>
+                  <span className="shot-n">1</span>
+                  <span>
+                    <strong>Career stats at a glance</strong> — races, wins,
+                    podiums and best finish.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">2</span>
+                  <span>
+                    <strong>&ldquo;Form over time&rdquo; graph</strong> — the
+                    exact performance data national selection reports read.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">3</span>
+                  <span>
+                    <strong>Full race history</strong> — every event the
+                    athlete has entered, in one place.
+                  </span>
+                </li>
+              </ol>
+              <p className="shot-itf">
+                &rarr; This is the athlete-data layer CFI needs for national
+                team selection and rider records — already live, not a promise.
+              </p>
+            </div>
+            <div className="shot-frame">
+              <div className="shot-bar" aria-hidden="true">
+                <span className="dot" />
+                <span className="dot" />
+                <span className="dot" />
+                <span className="shot-url">bbch-in.vercel.app/athletes/prranav-k</span>
+              </div>
+              <div className="shot-img">
+                <Pic
+                  src="/images/bbch-platform/profile.png"
+                  alt="BBCH athlete profile page with career stats, a form-over-time graph and race history"
+                />
+                <span className="pin" style={{ top: "26%", left: "12%" }}>1</span>
+                <span className="pin" style={{ top: "54%", left: "50%" }}>2</span>
+                <span className="pin" style={{ top: "87%", left: "18%" }}>3</span>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* SHOT 2 — Athlete directory */}
+          <Reveal className="shot flip">
+            <div className="shot-copy">
+              <span className="shot-kicker">Centralized athlete database</span>
+              <h3>One database. Every athlete on record.</h3>
+              <ol className="shot-notes">
+                <li>
+                  <span className="shot-n">1</span>
+                  <span>
+                    <strong>Search by name or team</strong> — find any athlete
+                    instantly.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">2</span>
+                  <span>
+                    <strong>3,071 riders on record</strong> — a real,
+                    populated database, not a demo.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">3</span>
+                  <span>
+                    <strong>Every card links to a full profile</strong> —
+                    races and wins visible at a glance.
+                  </span>
+                </li>
+              </ol>
+              <p className="shot-itf">
+                &rarr; Connect every state cycling association into this and it becomes
+                your national athlete registry — one source of truth.
+              </p>
+            </div>
+            <div className="shot-frame">
+              <div className="shot-bar" aria-hidden="true">
+                <span className="dot" />
+                <span className="dot" />
+                <span className="dot" />
+                <span className="shot-url">bbch-in.vercel.app/athletes</span>
+              </div>
+              <div className="shot-img">
+                <Pic
+                  src="/images/bbch-platform/athletes.png"
+                  alt="BBCH athletes directory with search and thousands of rider cards"
+                />
+                <span className="pin" style={{ top: "34%", left: "26%" }}>1</span>
+                <span className="pin" style={{ top: "39%", left: "9%" }}>2</span>
+                <span className="pin" style={{ top: "50%", left: "20%" }}>3</span>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* SHOT 3 — Results archive */}
+          <Reveal className="shot">
+            <div className="shot-copy">
+              <span className="shot-kicker">Searchable results archive</span>
+              <h3>Every result, one searchable source of truth</h3>
+              <ol className="shot-notes">
+                <li>
+                  <span className="shot-n">1</span>
+                  <span>
+                    <strong>Search any athlete by name</strong> across the
+                    whole archive.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">2</span>
+                  <span>
+                    <strong>Filter by year, discipline and category</strong> —
+                    drill down in seconds.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">3</span>
+                  <span>
+                    <strong>7,033 results logged</strong> — a decade of racing
+                    in one place.
+                  </span>
+                </li>
+              </ol>
+              <p className="shot-itf">
+                &rarr; No more scattered spreadsheets across state associations —
+                one clean, searchable record for all of CFI.
+              </p>
+            </div>
+            <div className="shot-frame">
+              <div className="shot-bar" aria-hidden="true">
+                <span className="dot" />
+                <span className="dot" />
+                <span className="dot" />
+                <span className="shot-url">bbch-in.vercel.app/results</span>
+              </div>
+              <div className="shot-img">
+                <Pic
+                  src="/images/bbch-platform/results.png"
+                  alt="BBCH results archive with search box, filters and a results table"
+                />
+                <span className="pin" style={{ top: "48%", left: "22%" }}>1</span>
+                <span className="pin" style={{ top: "48%", left: "68%" }}>2</span>
+                <span className="pin" style={{ top: "54%", left: "9%" }}>3</span>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* SHOT 4 — Events archive */}
+          <Reveal className="shot flip">
+            <div className="shot-copy">
+              <span className="shot-kicker">Event &amp; calendar tracking</span>
+              <h3>Every event, every season — tracked</h3>
+              <ol className="shot-notes">
+                <li>
+                  <span className="shot-n">1</span>
+                  <span>
+                    <strong>Filter by year</strong> — the full calendar from
+                    2015 to today.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">2</span>
+                  <span>
+                    <strong>Discipline &amp; category tagging</strong> on every
+                    event card.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">3</span>
+                  <span>
+                    <strong>Finisher counts + linked results</strong> — one
+                    click from event to standings.
+                  </span>
+                </li>
+              </ol>
+              <p className="shot-itf">
+                &rarr; Track CFI&rsquo;s whole national calendar and its history
+                — track, road, and MTB — in one system.
+              </p>
+            </div>
+            <div className="shot-frame">
+              <div className="shot-bar" aria-hidden="true">
+                <span className="dot" />
+                <span className="dot" />
+                <span className="dot" />
+                <span className="shot-url">bbch-in.vercel.app/events</span>
+              </div>
+              <div className="shot-img">
+                <Pic
+                  src="/images/bbch-platform/events.png"
+                  alt="BBCH events archive with year filter and event cards showing finishers"
+                />
+                <span className="pin" style={{ top: "26%", left: "42%" }}>1</span>
+                <span className="pin" style={{ top: "37%", left: "28%" }}>2</span>
+                <span className="pin" style={{ top: "62%", left: "28%" }}>3</span>
+              </div>
+            </div>
+          </Reveal>
+
+          {/* SHOT 5 — About / identity */}
+          <Reveal className="shot">
+            <div className="shot-copy">
+              <span className="shot-kicker">Federation identity &amp; story</span>
+              <h3>Not just data — the federation&rsquo;s story, told well</h3>
+              <ol className="shot-notes">
+                <li>
+                  <span className="shot-n">1</span>
+                  <span>
+                    <strong>Mission &amp; vision</strong> presented cleanly, up
+                    front.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">2</span>
+                  <span>
+                    <strong>&ldquo;What we stand for&rdquo;</strong> — values
+                    laid out for members and sponsors.
+                  </span>
+                </li>
+                <li>
+                  <span className="shot-n">3</span>
+                  <span>
+                    <strong>Integrated photo galleries</strong> — real
+                    race-day imagery, built in.
+                  </span>
+                </li>
+              </ol>
+              <p className="shot-itf">
+                &rarr; CFI&rsquo;s site becomes a home for its identity and
+                sponsors, not just a static homepage.
+              </p>
+            </div>
+            <div className="shot-frame">
+              <div className="shot-bar" aria-hidden="true">
+                <span className="dot" />
+                <span className="dot" />
+                <span className="dot" />
+                <span className="shot-url">bbch-in.vercel.app/about</span>
+              </div>
+              <div className="shot-img">
+                <Pic
+                  src="/images/bbch-platform/about.png"
+                  alt="BBCH about page showing mission, vision, values and a photo gallery"
+                />
+                <span className="pin" style={{ top: "14%", left: "30%" }}>1</span>
+                <span className="pin" style={{ top: "48%", left: "20%" }}>2</span>
+                <span className="pin" style={{ top: "82%", left: "42%" }}>3</span>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={120}>
+            <div style={{ marginTop: 44 }}>
+              <a
+                className="ig-link"
+                href="https://bbch-in.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Explore it live — bbch-in.vercel.app
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ================= PORTAL WORKFLOW ================= */}
       <section className="stage" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <Reveal>
             <div className="plate">
-              <span className="plate-num">05</span>
+              <span className="plate-num">06</span>
               <span className="plate-label">How the portal works</span>
             </div>
           </Reveal>
@@ -549,7 +849,7 @@ export default function Page() {
         <div className="wrap">
           <Reveal>
             <div className="plate">
-              <span className="plate-num">06</span>
+              <span className="plate-num">07</span>
               <span className="plate-label">Our media partner</span>
             </div>
           </Reveal>
@@ -607,7 +907,7 @@ export default function Page() {
         <div className="wrap">
           <Reveal>
             <div className="plate">
-              <span className="plate-num">07</span>
+              <span className="plate-num">08</span>
               <span className="plate-label">The immediate opportunity</span>
             </div>
           </Reveal>
@@ -661,7 +961,7 @@ export default function Page() {
         <div className="wrap">
           <Reveal>
             <div className="plate" style={{ justifyContent: "center" }}>
-              <span className="plate-num">08</span>
+              <span className="plate-num">09</span>
               <span className="plate-label">Finish line</span>
             </div>
           </Reveal>
