@@ -582,10 +582,10 @@ export default function Page() {
                 </a>
               </Reveal>
             </div>
-            <Reveal className="partner-photo" delay={180}>
+            <Reveal className="partner-photo partner-ig-shot" delay={180}>
               <Pic
                 src="/images/media-partner/mmm.jpg"
-                alt="Man Made Machine crew filming on race day"
+                alt="Man Made Machine Instagram Profile"
               />
             </Reveal>
           </div>
