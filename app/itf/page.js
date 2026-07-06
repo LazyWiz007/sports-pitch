@@ -987,7 +987,7 @@ export default function ItfPage() {
           <Reveal className="opp-photo" delay={160}>
             <Pic
               src="/images/itf-opportunity/opportunity.jpg"
-              alt="Indian triathletes competing"
+              alt="Indian Triathlon Federation (ITF) National Triathlon Championship finish line and athletes"
             />
           </Reveal>
           <div className="opp-grid">

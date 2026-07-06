@@ -585,14 +585,15 @@ a { color: inherit; }
 }
 .partner-list li strong { color: var(--chalk); }
 
-/* ---------- opportunity ---------- */
 .opp-photo { margin-top: 40px; }
 .opp-photo img,
 .opp-photo .pic-placeholder {
   width: 100%;
-  height: clamp(220px, 32vw, 380px);
+  height: clamp(320px, 45vw, 560px);
   object-fit: cover;
-  border-radius: 10px;
+  object-position: center 25%;
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
 }
 .opp-grid {
   margin-top: 28px;
