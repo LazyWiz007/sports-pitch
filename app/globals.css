@@ -211,10 +211,104 @@ a { color: inherit; }
 .hero-photo img,
 .hero-photo .pic-placeholder {
   width: 100%;
-  height: clamp(260px, 42vw, 520px);
+  height: clamp(340px, 48vw, 560px);
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  object-position: center 15%;
+  border-radius: 12px 12px 0 0;
   filter: saturate(1.05);
+}
+
+/* dual hero photo grid for featuring 5150 Ironman race photos */
+.hero-photo-dual {
+  margin-top: clamp(40px, 6vw, 70px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  position: relative;
+}
+.hero-photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid var(--line-dark);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+.hero-photo-dual img,
+.hero-photo-dual .pic-placeholder {
+  width: 100%;
+  height: clamp(360px, 48vw, 540px);
+  object-fit: cover;
+  object-position: center 12%;
+  filter: saturate(1.05);
+  transition: transform 0.5s ease;
+}
+.hero-photo-item:hover img {
+  transform: scale(1.03);
+}
+
+.hero-photo-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(15, 17, 20, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line-dark);
+  border-left: 3px solid var(--saffron);
+  border-radius: 6px;
+  padding: 10px 14px;
+  color: var(--chalk);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  z-index: 2;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+.hero-photo-badge strong {
+  color: var(--saffron);
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 680px) {
+  .hero-photo-dual {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .hero-photo-dual img {
+    height: clamp(300px, 75vw, 440px);
+  }
+}
+
+/* founder gallery */
+.founder-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.founder-gallery .founder-img-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line-dark);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+.founder-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 15%;
+  transition: transform 0.4s ease;
+}
+.founder-gallery .founder-img-card:hover img {
+  transform: scale(1.03);
+}
+@media (max-width: 600px) {
+  .founder-gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* road line under hero photo */

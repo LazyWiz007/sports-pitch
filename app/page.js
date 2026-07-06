@@ -182,10 +182,20 @@ export default function Page() {
           </Reveal>
           <div className="partner">
             <Reveal className="partner-photo">
-              <Pic
-                src="/images/about/founder.jpg"
-                alt="Parshuram Gore, founder of Webrook, mid-race"
-              />
+              <div className="founder-gallery">
+                <div className="founder-img-card">
+                  <Pic
+                    src="/images/about/5150chennai-1.jpg"
+                    alt="Parshuram Gore competing in 5150 Ironman Chennai"
+                  />
+                </div>
+                <div className="founder-img-card">
+                  <Pic
+                    src="/images/about/5150chennai-2.jpg"
+                    alt="Parshuram Gore in action at 5150 Ironman"
+                  />
+                </div>
+              </div>
             </Reveal>
             <div>
               <Reveal delay={60}>

@@ -63,11 +63,27 @@ export default function ItfPage() {
             </div>
           </Reveal>
           <Reveal delay={300}>
-            <div className="hero-photo">
-              <Pic
-                src="/images/itf-hero/hero.jpg"
-                alt="Triathlete racing at full effort"
-              />
+            <div className="hero-photo-dual">
+              <div className="hero-photo-item">
+                <Pic
+                  src="/images/about/5150chennai-1.jpg"
+                  alt="Parshuram Gore racing in 5150 Ironman Chennai triathlon"
+                />
+                <div className="hero-photo-badge">
+                  <strong>5150 Ironman Chennai</strong>
+                  Parshuram Gore pushing through tough race conditions
+                </div>
+              </div>
+              <div className="hero-photo-item">
+                <Pic
+                  src="/images/about/5150chennai-2.jpg"
+                  alt="Parshuram Gore finishing the 5150 Ironman triathlon"
+                />
+                <div className="hero-photo-badge">
+                  <strong>Built by Triathletes</strong>
+                  We know what endurance sport demands on race day
+                </div>
+              </div>
             </div>
           </Reveal>
         </div>
@@ -192,10 +208,20 @@ export default function ItfPage() {
           </Reveal>
           <div className="partner">
             <Reveal className="partner-photo">
-              <Pic
-                src="/images/about/founder.jpg"
-                alt="Parshuram Gore, founder of Webrook, mid-race"
-              />
+              <div className="founder-gallery">
+                <div className="founder-img-card">
+                  <Pic
+                    src="/images/about/5150chennai-1.jpg"
+                    alt="Parshuram Gore competing in 5150 Ironman Chennai"
+                  />
+                </div>
+                <div className="founder-img-card">
+                  <Pic
+                    src="/images/about/5150chennai-2.jpg"
+                    alt="Parshuram Gore in action at 5150 Ironman"
+                  />
+                </div>
+              </div>
             </Reveal>
             <div>
               <Reveal delay={60}>
