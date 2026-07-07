@@ -29,9 +29,17 @@ export default function Page() {
       <header className="hero" id="top">
         <div className="wrap">
           <Reveal>
-            <p className="hero-eyebrow">
-              Proposal for the Cycling Federation of India
-            </p>
+            <div className="cfi-badge">
+              <img
+                src="/images/cfi-logo.png"
+                alt="Cycling Federation of India"
+                className="cfi-badge-logo"
+              />
+              <div className="cfi-badge-text">
+                <span className="cfi-badge-label">Official Proposal</span>
+                <span className="cfi-badge-name">Cycling Federation of India</span>
+              </div>
+            </div>
           </Reveal>
           <Reveal delay={80}>
             <h1 className="h1">
@@ -77,32 +85,29 @@ export default function Page() {
               <Reveal className="board-row">
                 <span className="board-rank">01</span>
                 <span className="board-label">
-                  <strong>Total views</strong> across sports clients, last few
-                  years
+                  <strong>Tour of Nilgiris</strong> — views overall in 8 months
                 </span>
                 <span className="board-value">
-                  <Counter value={100} suffix="" />
-                  <span className="unit">M+</span>
+                  100<span className="unit">M+</span>
                 </span>
               </Reveal>
               <Reveal className="board-row" delay={80}>
                 <span className="board-rank">02</span>
                 <span className="board-label">
                   <strong>Tour of Nilgiris</strong> — Instagram followers in 8
-                  months, fully organic
+                  months, from scratch
                 </span>
                 <span className="board-value">
-                  2K&nbsp;&rarr;&nbsp;10.5<span className="unit">K</span>
+                  0&nbsp;&rarr;&nbsp;10.5<span className="unit">K</span>
                 </span>
               </Reveal>
               <Reveal className="board-row" delay={160}>
                 <span className="board-rank">03</span>
                 <span className="board-label">
-                  <strong>Asian MTB Championship</strong> — followers gained in
-                  5 race days
+                  <strong>Asian MTB Championship</strong> — viewers on dashboard within a month
                 </span>
                 <span className="board-value">
-                  0&nbsp;&rarr;&nbsp;<Counter value={650} />
+                  1<span className="unit">M+</span>
                 </span>
               </Reveal>
               <Reveal className="board-row" delay={240}>
@@ -172,78 +177,94 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ================= FOUNDER ================= */}
+      {/* ================= FOUNDER / TEAM ================= */}
       <section className="stage dark" id="founder">
         <div className="wrap">
           <Reveal>
             <div className="plate">
               <span className="plate-num">02</span>
-              <span className="plate-label">The person behind the pedal strokes</span>
+              <span className="plate-label">Meet the founders</span>
             </div>
           </Reveal>
-          <div className="partner">
-            <Reveal className="partner-photo">
-              <div className="founder-gallery">
-                <div className="founder-img-card">
-                  <Pic
-                    src="/images/about/5150chennai-1.jpg"
-                    alt="Parshuram Gore competing in 5150 Ironman Chennai"
-                  />
-                </div>
-                <div className="founder-img-card">
-                  <Pic
-                    src="/images/about/5150chennai-2.jpg"
-                    alt="Parshuram Gore in action at 5150 Ironman"
-                  />
-                </div>
+          <Reveal delay={60}>
+            <h2 className="h2">
+              The team behind the{" "}
+              <span className="accent">pedal strokes</span>.
+            </h2>
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="lede">
+              Athletes, builders, and industry veterans — all rowing in the same direction.
+            </p>
+          </Reveal>
+
+          <div className="team-grid">
+            {/* Nikhil */}
+            <Reveal className="team-card">
+              <div className="team-photo">
+                <Pic
+                  src="/images/about/nikhil-das.png"
+                  alt="Nikhil Das"
+                />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Nikhil Das</h3>
+                <span className="team-role">Board Member &amp; Consultant</span>
+                <p className="team-bio">
+                  Ex-CTO at Havells — the person who scaled enterprise tech for one of India&rsquo;s biggest brands. Brings deep platform architecture and product thinking to everything we build.
+                </p>
+                <a
+                  className="ig-link"
+                  href="https://www.linkedin.com/in/nikhil-das-tech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn — Nikhil Das
+                </a>
               </div>
             </Reveal>
-            <div>
-              <Reveal delay={60}>
-                <h2 className="h2">
-                  Parshuram Gore.{" "}
-                  <span className="accent">Athlete first, founder second.</span>
-                </h2>
-              </Reveal>
-              <Reveal delay={120}>
-                <p className="lede">
-                  Webrook isn&rsquo;t run by an agency guy who discovered
-                  cycling last quarter. It&rsquo;s run by someone who lines up
-                  on race day.
+
+            {/* Parshuram */}
+            <Reveal className="team-card" delay={100}>
+              <div className="team-photo">
+                <Pic
+                  src="/images/about/founder.jpg"
+                  alt="Parshuram Gore competing in 5150 Ironman Chennai"
+                />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Parshuram Gore</h3>
+                <span className="team-role">Founder &amp; CEO — Athlete First</span>
+                <p className="team-bio">
+                  Ironman finisher. Tour of Nilgiris rider. Webrook isn&rsquo;t run by an agency guy who discovered cycling last quarter — it&rsquo;s run by someone who lines up on race day and builds the tools the sport actually needs.
                 </p>
-              </Reveal>
-              <Reveal delay={180}>
-                <ul className="partner-list">
-                  <li>
-                    <strong>Ironman finisher</strong> — he knows what
-                    endurance sport demands, because he&rsquo;s paid that price
-                    himself.
-                  </li>
-                  <li>
-                    <strong>Raced the Tour of Nilgiris</strong> — the same
-                    flagship event Webrook now powers end to end.
-                  </li>
-                  <li>
-                    <strong>Sees the sport from the inside</strong> — the
-                    rider&rsquo;s perspective on registration, race day and
-                    coverage is built into everything we ship.
-                  </li>
-                  <li>
-                    <strong>Creates content himself</strong> — behind the
-                    camera and in front of it, he knows what makes an audience
-                    stop scrolling.
-                  </li>
-                </ul>
                 <a
                   className="ig-link"
                   href="https://www.instagram.com/parshuram_.gore/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Follow the journey — @parshuram_.gore
+                  Instagram — @parshuram_.gore
                 </a>
-              </Reveal>
-            </div>
+              </div>
+            </Reveal>
+
+            {/* Anil */}
+            <Reveal className="team-card" delay={200}>
+              <div className="team-photo">
+                <Pic
+                  src="/images/about/anil-kotnis.jpg"
+                  alt="Anil Kotnis"
+                />
+              </div>
+              <div className="team-info">
+                <h3 className="team-name">Anil Kotnis</h3>
+                <span className="team-role">Co-founder &amp; Strategy</span>
+                <p className="team-bio">
+                  Ex-Director at Microsoft — two decades building enterprise products and driving strategic growth at global scale. Shapes how Webrook thinks about partnerships, data and long-term platform vision.
+                </p>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -295,15 +316,15 @@ export default function Page() {
               <div className="case-stats">
                 <div className="case-stat">
                   <div className="num">
-                    2K <em>&rarr;</em> 10.5K
+                    0 <em>&rarr;</em> 10.5K
                   </div>
-                  <div className="lbl">followers in 8 months, fully organic</div>
+                  <div className="lbl">followers in 8 months, from scratch</div>
                 </div>
                 <div className="case-stat">
                   <div className="num">
-                    +45<em>%</em>
+                    100<em>M+</em>
                   </div>
-                  <div className="lbl">YoY audience growth</div>
+                  <div className="lbl">views overall in 8 months</div>
                 </div>
               </div>
               <a
@@ -340,15 +361,15 @@ export default function Page() {
               <div className="case-stats">
                 <div className="case-stat">
                   <div className="num">
-                    0 <em>&rarr;</em> 650
+                    1<em>M+</em>
                   </div>
-                  <div className="lbl">followers in just 5 race days</div>
+                  <div className="lbl">viewers on the dashboard within a month</div>
                 </div>
                 <div className="case-stat">
                   <div className="num">
-                    5<em> days</em>
+                    0 <em>&rarr;</em> 650
                   </div>
-                  <div className="lbl">daily edits, live from the ground</div>
+                  <div className="lbl">followers in just 5 race days</div>
                 </div>
               </div>
               <a
@@ -397,6 +418,47 @@ export default function Page() {
                 rel="noopener noreferrer"
               >
                 See it live — @bangalorebicyclechampionships
+              </a>
+            </div>
+          </Reveal>
+
+          {/* BBCH Website */}
+          <Reveal className="case">
+            <div className="case-photo">
+              <Pic
+                src="/images/bbch-platform/profile.png"
+                alt="BBCH website platform screenshot"
+              />
+            </div>
+            <div>
+              <span className="case-tag">
+                Case 04 — Live federation platform
+              </span>
+              <h3>BBCH Website &amp; Digital Platform</h3>
+              <p className="case-body">
+                Not a mockup — a <strong>fully live federation website</strong> we designed, built and maintain: athlete profiles, a searchable results archive, event calendar, race registrations and a decade of race history in one clean, fast platform. The blueprint for what we build for CFI.
+              </p>
+              <div className="case-stats">
+                <div className="case-stat">
+                  <div className="num">
+                    3,071<em>+</em>
+                  </div>
+                  <div className="lbl">athletes on record</div>
+                </div>
+                <div className="case-stat">
+                  <div className="num">
+                    7,033<em>+</em>
+                  </div>
+                  <div className="lbl">results logged</div>
+                </div>
+              </div>
+              <a
+                className="ig-link"
+                href="https://bbch-in.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Explore live — bbch-in.vercel.app
               </a>
             </div>
           </Reveal>
@@ -844,22 +906,32 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ================= MEDIA PARTNER ================= */}
+      {/* ================= MEDIA PARTNERS ================= */}
       <section className="stage dark" id="partner">
         <div className="wrap">
           <Reveal>
             <div className="plate">
               <span className="plate-num">07</span>
-              <span className="plate-label">Our media partner</span>
+              <span className="plate-label">Our media partners</span>
             </div>
           </Reveal>
-          <div className="partner">
+          <Reveal delay={60}>
+            <h2 className="h2">
+              World-class creators.{" "}
+              <span className="accent">All on the same start line.</span>
+            </h2>
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="lede">
+              We don&rsquo;t just manage content — we bring a network of elite sports creators who live and breathe race-day storytelling.
+            </p>
+          </Reveal>
+
+          {/* Man Made Machine */}
+          <div className="partner" style={{ marginTop: 44 }}>
             <div>
               <Reveal delay={60}>
-                <h2 className="h2">
-                  Man Made Machine.{" "}
-                  <span className="accent">Top-of-the-line content.</span>
-                </h2>
+                <h3 className="h3-media">Man Made Machine</h3>
               </Reveal>
               <Reveal delay={120}>
                 <ul className="partner-list">
@@ -868,9 +940,8 @@ export default function Page() {
                     clients over the last few years.
                   </li>
                   <li>
-                    <strong>Documentary-grade production</strong> — we&rsquo;ve
-                    made full documentaries on events, athletes and journeys,
-                    not just reels.
+                    <strong>Documentary-grade production</strong> — full
+                    documentaries on events, athletes and journeys, not just reels.
                   </li>
                   <li>
                     <strong>Race-day specialists</strong> — a crew that knows
@@ -897,6 +968,44 @@ export default function Page() {
                 src="/images/media-partner/mmm.jpg"
                 alt="Man Made Machine Instagram Profile"
               />
+            </Reveal>
+          </div>
+
+          {/* Additional media partners grid */}
+          <div className="media-partners-grid">
+            {/* Akhil */}
+            <Reveal className="media-partner-card">
+              <div className="mp-icon">📸</div>
+              <h4 className="mp-name">Akhil Puthiyedath</h4>
+              <p className="mp-bio">
+                Elite sports photographer and filmmaker who shoots for the world&rsquo;s biggest motorsport stage — <strong>Formula 1</strong>. His eye for speed, light and decisive moments is exactly what cycling deserves.
+              </p>
+              <a
+                className="ig-link"
+                href="https://www.instagram.com/_akhilputhiyedath/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @_akhilputhiyedath
+              </a>
+            </Reveal>
+
+            {/* Shoot for F1 */}
+            <Reveal className="media-partner-card" delay={100}>
+              <div className="mp-icon">🎬</div>
+              <h4 className="mp-name">Shoot for F1</h4>
+              <p className="mp-bio">
+                A production house with a pedigree forged on the fastest circuits in the world. Bringing Formula 1&ndash;grade cinematography to the roads and tracks of Indian cycling.
+              </p>
+            </Reveal>
+
+            {/* KP Production */}
+            <Reveal className="media-partner-card" delay={200}>
+              <div className="mp-icon">🎥</div>
+              <h4 className="mp-name">KP Production</h4>
+              <p className="mp-bio">
+                A seasoned production partner specialising in sports storytelling — long-form documentaries, athlete features and race-day highlight packages delivered to broadcast standard.
+              </p>
             </Reveal>
           </div>
         </div>
